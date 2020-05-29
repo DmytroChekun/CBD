@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+*{
+  font-family: 'Oswald', sans-serif;
+}
+html{
+  font-family: 'Oswald', sans-serif;
+}
+svg path {
+  stroke:inherit;
+  stroke-width:inherit;
+  fill:inherit;
+  }
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+// @font-face {
+//     font-family: "Gotham Medium";
+//     src: url("./fonts/gotham-medium-webfont.woff2") format("woff2"),
+//            url("./fonts/gotham-medium-webfont.woff") format("woff");   
+
+//     font-family: "Gotham Bold";
+//     src: url("./fonts/gothambold1.ttf") format("true-type"),
+//             url("./fonts/gothambold1.woff") format("woff");  
+
+//     font-family: "Gotham Book";
+//     src: url("./fonts/GothamBook.ttf") format("true-type"),
+//             url("./fonts/GothamBook.woff") format("woff");    
+//    };
+
+// $g-book: "Gotham Book", sans-serif;
+// $g-bold: "Gotham Bold", sans-serif;
+// $g-medium: "Gotham Medium", sans-serif;
+// $os: 'Open Sans', sans-serif;
+$cannabisl: #ced6af;
+$cannabisd: #6e774a;
+@mixin title1 {
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@mixin title2 {
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  .add-visibility{
+    display: flex !important;
+}
+
+// @mixin title-medium {
+//     font-family: $g-medium;
+//     font-size: 44px;
+//     text-transform: uppercase;
+// }
+// @mixin btn {
+//         border: 1px solid #2c4058;
+//         width: 190px;
+//         height: 50px;
+//         background-color: transparent;
+//         text-transform: uppercase;
+//         font-family: $g-book;
+//         font-size: 14px;
+// }
+
+// .social-box{
+//     display: flex;
+//     width: 160px;
+//     justify-content: space-between;
+
+// }
+// .social-item{
+//     border: 1px solid rgba(255, 255, 255, 0.411);
+//     border-radius: 50%;
+//     width: 39px;
+//     height: 38px;
+//     display: flex;
+//     justify-content: center;
+//     color: #fff;
+//     align-self: center;
+//     cursor: pointer;
+// }
+// .social-ico{
+//     align-self: center;
+//     font-size: 15px;
+//     opacity: 1 !important;
+// }
+
+// .hr-line{
+//     border-top: 1px solid #2c4058;
+//     width: 100px;
+//     margin: 0 auto;
+//     margin-top: 140px;
+//     height: 1px;
+// }
+
+// .social-item:hover{
+//     background: #fff;
+//     color: #55b7ff;
+// }
+// .social-item:active{
+//     color: #7e5aff;
+// }
+
+// .button:hover{
+//     background: #2f88c7;
+//     color: #fff;
+//     border-color: #2f88c7;
+//     transition: all 0.1s ease-in-out;
+// }
+// .button{
+//     transition: all 0.1s ease-in-out;
+//     cursor: pointer;
+//     align-items: center;
+// }
+// .button:active{
+//     transition: all 0.05s ease;
+//     background: rgba(85, 59, 182, 0.555);
+//     outline: none;
+// }
+
+
+
+
+
+// .slick-dots button{
+//     border: 1px solid #fff;
+//     cursor: pointer;
+// }
