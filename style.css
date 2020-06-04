@@ -121,6 +121,7 @@ html {
   text-decoration: none;
   height: 100%;
   outline: none;
+  color: #fff;
 }
 
 .navbar a:visited {
@@ -348,7 +349,7 @@ html {
 }
 
 .intro-wrapper {
-  background-image: url(../images/Header/header.jpg);
+  background-image: url(./images/Header/header.jpg);
   background-position-y: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1126,7 +1127,7 @@ html {
 
 .testimonals-wrap {
   width: 100%;
-  background-image: url(../images/Testimonials/testim-img.jpg);
+  background-image: url(./images/Testimonials/testim-img.jpg);
   background-position-y: bottom;
   background-size: cover;
   background-repeat: no-repeat;

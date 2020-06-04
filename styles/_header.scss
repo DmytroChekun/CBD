@@ -27,6 +27,7 @@
 			text-decoration: none;
 			height: 100%;
 			outline: none;
+			color: #fff;
 		  }
 		  a:visited {
 			color: #fff;
@@ -229,7 +230,7 @@
 
 
 .intro-wrapper {
-	background-image: url(../images/Header/header.jpg);
+	background-image: url(./images/Header/header.jpg);
 	@include background-fluid;
 	width: 100%;
 	height: 100vh;
