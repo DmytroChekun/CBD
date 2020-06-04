@@ -1,59 +1,211 @@
 .footer {
-
+    display: flex;
+    margin-top: 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
     // .footer__info-sidebox
 
     &__info-sidebox {
+        text-align: center;
+        border-top: 2px solid $cannabisd;
+        width: 31%;
+        padding-top: 85px;
     }
 
     // .footer__sidebox-text
 
     &__sidebox-text {
+        font-size: 14px;
+        color: $cannabisd;
+        text-transform: uppercase;
+        letter-spacing: 0.26em;
+        line-height: 2.9em;
+        cursor: pointer;
     }
-
+    &__sidebox-text:hover {
+        color: #1d250e;
+    }
+    &__sidebox-text:active {
+        transform: scale(1.05);
+    }
     // .footer__contact-box
 
     &__contact-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 33.3%;
+        align-items: center;
     }
 
     // .footer__title
 
     &__title {
+        font-size: 60px;
+        text-transform: uppercase;
+        color: $cannabisd;
+        margin-top: -32px;
     }
 
     // .footer__social-box
 
     &__social-box {
+        width: 182px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
     }
 
     // .footer__social-item
 
     &__social-item {
+        cursor: pointer;
     }
-
+    &__social-item:hover {
+        .footer__social-ico {
+            transform: scale(1.1);
+        }
+    }
+    &__social-item:active {
+        .footer__social-ico {
+            transform: scale(1.25);
+        }
+    }
     // .footer__social-ico
 
     &__social-ico {
+    }
+    &__social-ico {
+        
     }
 
     // .footer__email
 
     &__email {
+        border: 2px solid $cannabisl;
+        width: 370px;
+        height: 60px;
+        display: flex;
+        align-items: center;
     }
 
     // .footer__email-input
 
     &__email-input {
+        font-size: 16px;
+        font-weight: 300;
+        color: $cannabisd;
+        background-color: transparent;
+        border: none;
+        width: 75%;
+        padding-left: 30px;
+        box-sizing: border-box;
+        letter-spacing: 0.22em;
     }
 
     // .footer__email-confirm
 
     &__email-confirm {
+        width: 25%;
+        background-color: transparent;
+        border: none;
+        border-left: 2px solid $cannabisl;
+        height: 93%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        transition: all 0.2s ease;
+    }
+    &__email-confirm:hover{
+        background-color: $cannabisl;
+    }
+    &__email-confirm:active{
+        .footer__button-arrow{
+            width: 25px;
+            text-align: center;
+            transform: scale(1.15);
+            transition: all 0.2s ease;
+        }
+    }
+    &__button-arrow{
+        width: 25px;
+        text-align: center;
     }
 
     // .footer__subscribe-title
 
     &__subscribe-title {
+        width: 100%;
+        font-size: 18px;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin: 30px 0;
+
     }
 }
 .copyrights {
+    font-size: 11px;
+    color: $cannabisd;
+    text-transform: uppercase;
+    letter-spacing: 0.27em;
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+@media (max-width: 996px){
+    .footer{
+        display: flex;
+    }
+    .footer__info-sidebox{
+        width: 45% !important;
+        order: 1 !important;
+        padding-top: 25px;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+    .footer__contact-box{
+        width: 100%;
+        margin: 0 auto;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        order: 3 !important;
+    }
+    .copyrights{
+        width: 100%;
+        order: 4;
+    }
+    .footer__title{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 420px){
+    .footer__info-sidebox{
+        width: 60% !important;
+        margin: 0 auto;
+    }
+    .footer__social-box{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 384px){
+    .footer__email {
+        width: 90% !important;
+    }
+    .footer__email-input{
+        width: 70%;
+    }
+    .footer__email-confirm{
+        width: 30%;
+    }
+
 }

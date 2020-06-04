@@ -1,3 +1,5 @@
+@import "./styles/reset.css";
+
 // Common block styles
 @import "./styles/common";
 
@@ -8,3 +10,7 @@
 @import "./styles/questions";
 @import "./styles/testimonals";
 @import "./styles/footer";
+
+//slick
+@import "./styles/slick.css";
+@import "./styles/slick-theme.css";

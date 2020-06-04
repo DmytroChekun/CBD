@@ -1,64 +1,165 @@
 .products {
-
+    width: 100%;
     // .products__title
 
     &__title {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 5.35%;
+        letter-spacing: 0.2em;
+        margin-bottom: 4%;
     }
 
     // .products__slider
 
     &__slider {
+        width: 99.2%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
     }
 
     // .products__slider-item
 
     &__slider-item {
+        width: 32.1%;
+        margin: 0 0.7vw;
     }
 
     // .products__item-card
 
     &__item-card {
+        border: 1px solid #ced6af;
+        width: 100%;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #fff;
     }
 
     // .products__name-title
 
     &__name-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+        letter-spacing: 0.15em;
     }
 
     // .products__pic-box
 
     &__pic-box {
+        width: 100%;
+        margin: 0 auto;
+        height: 70%;
+        display: flex;
+        align-items: center;
     }
 
     // .products__pic
 
     &__pic {
+        margin: auto;
     }
 
     // .products__int-box
 
     &__int-box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #f1f1f1;
+        border: 1px solid #f1f1f1;
     }
 
     // .products__int-price
 
     &__int-price {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        margin-left: 28px;
+        font-size: 18px;
+        color: $black;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
     }
 
     // .products__shop-link
 
     &__shop-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: $cannabisd;
+        width: 190px;
+        height: 75px;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
     }
-
+    &__shop-link:hover{
+        background-color: #363a25;
+    }
+    &__shop-link:active{
+        border: 2px solid $cannabisd;
+        background-color: #363a25;
+    }
     // .products__link-text
 
     &__link-text {
+        margin-right: 10px;
     }
 
     // .products__link-line
-
     &__link-line {
+        margin-left: 10px;
+    }
+    &__arrow-box {
+        display: flex;
+        width: 140px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    &__arrow-left, &__arrow-right{
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    &__arrow-left:hover, &__arrow-right:hover, &__arrow-right:active &__arrow-left:active{
+            transform: scale(1.1);
+            transition: all 0.2s ease;
     }
 }
 .star-rating {
+    text-align: center;
+    margin-top: 30px;
+    .stars{
+        height: 17px;
+        width: auto;
+    }
+}
+
+
+@media (max-width: 862px){
+    .products__name-title{
+        font-size: 14px;
+    }
+    .products__title{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px){
+    .products__title{
+        font-size: 18px !important;
+    }
+    .products__arrow-box{
+        margin-top: 30px;
+    }
 }
