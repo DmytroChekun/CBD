@@ -600,6 +600,18 @@ html {
   background-color: red !important;
 }
 
+@media (max-width: 500px) {
+  .products__int-box {
+    height: 50px;
+  }
+  .products__shop-link {
+    height: 50px !important;
+  }
+  .star-rating {
+    margin-top: 5px !important;
+  }
+}
+
 .advantages {
   width: 50%;
   background-repeat: no-repeat;
@@ -1525,14 +1537,35 @@ html {
   }
 }
 
+@media (max-width: 620px) {
+  .footer {
+    margin-top: 5% !important;
+  }
+  .footer__sidebox-text {
+    font-size: 11px;
+  }
+  .footer__title {
+    font-size: 40px;
+  }
+  .footer__subscribe-title {
+    font-size: 13px;
+  }
+  .copyrights {
+    font-size: 9px;
+  }
+}
+
 @media (max-width: 420px) {
   .footer__info-sidebox {
     width: 60% !important;
-    margin: 0 auto;
+    margin: 5px auto !important;
   }
   .footer__social-box {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .footer__line {
+    display: none;
   }
 }
 

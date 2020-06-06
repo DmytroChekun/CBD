@@ -328,10 +328,6 @@
 			}
 
 			// .intro__button-line
-
-			&__button-line {
-			}
-
 			// .intro__products-link
 
 			&__products-link {
@@ -375,9 +371,6 @@
 	left: 49%;
 	cursor: pointer;
 	animation: float 3s ease-in-out infinite;
-	.scroll-arrow {
-
-	}
 }
 
 @media (max-width: 1265px){
@@ -452,3 +445,14 @@
 	background-color: red !important;
 }
 
+@media (max-width: 500px){
+	.products__int-box{
+		height: 50px;
+	}
+	.products__shop-link{
+		height: 50px !important;
+	}
+	.star-rating{
+		margin-top: 5px !important;
+	}
+}
